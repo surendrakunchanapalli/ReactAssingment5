@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import {Component} from 'react'
 import Cookies from 'js-cookie'
 import {MdLocationOn} from 'react-icons/md'
@@ -70,7 +71,7 @@ class AboutJobItem extends Component {
           id: eachItem.id,
           jobDescription: eachItem.job_description,
           employmentType: eachItem.employment_type,
-          location: eachItem.loacation,
+          location: eachItem.location,
           rating: eachItem.rating,
           title: eachItem.title,
         }),

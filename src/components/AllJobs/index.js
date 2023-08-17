@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import Cookies from 'js-cookie'
@@ -146,7 +147,9 @@ class AllJobs extends Component {
 
   onGetInputOption = event => {
     const {checkboxInputs} = this.state
-    const inputNotInList = ch.filter(eachItem => eachItem === event.target.id)
+    const inputNotInList = checkboxInputs.filter(
+      eachItem => eachItem === event.target.id,
+    )
     if (inputNotInList.length === 0) {
       this.setState(
         prevState => ({

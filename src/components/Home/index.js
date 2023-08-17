@@ -17,12 +17,12 @@ const Home = props => {
           Fits Your Life
         </h1>
         <p className="home-paragraph">
-          Hillions of people are searching for jobs, salary information, company
+          Millions of people are searching for jobs, salary information, company
           reviews. Find the job that fits your abilities and potential.
         </p>
         <Link className="retry-btn-link" to="/jobs">
           <button
-            className="home-btn-link"
+            className="home-jobs-button"
             type="button"
             onClick={onRedirectToJobs}
           >

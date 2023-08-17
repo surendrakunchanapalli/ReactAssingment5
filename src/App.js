@@ -10,7 +10,7 @@ import './App.css'
 // Replace your code here
 const App = () => (
   <Switch>
-    <Route exact path="./login" component={LoginForm} />
+    <Route exact path="/login" component={LoginForm} />
     <ProtectedRoute exact path="/" component={Home} />
     <ProtectedRoute exact path="/jobs" component={AllJobs} />
     <ProtectedRoute exact path="/job/:id" component={AboutJobItem} />

@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import Cookies from 'js-cookie'
-import {component} from 'js-cookie'
+import {Component} from 'react'
 import {Redirect} from 'react-router-dom'
 import './index.css'
 
@@ -10,6 +11,7 @@ class LoginForm extends Component {
   state = {username: '', password: '', showSubmitError: false, errorMsg: ''}
 
   onGetUsername = event => this.setState({username: event.target.value})
+
   onGetPassword = event => this.setState({password: event.target.value})
 
   onSubmitSuccess = jwtToken => {

@@ -1,4 +1,5 @@
-import {MdlocationOn} from 'react-icons/md'
+/* eslint-disable no-unused-vars */
+import {MdLocationOn} from 'react-icons/md'
 import {AiFillStar} from 'react-icons/ai'
 import './index.css'
 
@@ -38,7 +39,7 @@ const SimilarJobs = props => {
       </div>
       <div className="location-job-details-type-container">
         <div className="location-job-icon-loacation-container">
-          <MdlocationOn className="location-job-icon" />
+          <MdLocationOn className="location-job-icon" />
           <p className="location-job">{location}</p>
         </div>
         <div className="employment-job-type-icon-employment-type-container">
