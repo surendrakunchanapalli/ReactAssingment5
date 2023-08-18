@@ -63,6 +63,15 @@ class LoginForm extends Component {
             USERNAME
           </label>
           <br />
+          <input
+            className="form-input"
+            type="text"
+            value={username}
+            onChange={this.onGetUsername}
+            placeholder="username"
+            id="username"
+          />
+          <br />
           <br />
           <label className="form-label" htmlFor="password">
             PASSWORD
