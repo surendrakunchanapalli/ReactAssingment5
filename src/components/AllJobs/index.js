@@ -82,7 +82,7 @@ class AllJobs extends Component {
     this.setState({apiStatus: apiStatusConstants.inProgress})
     const jwtToken = Cookies.get('jwt_token')
     const {checkboxInputs, radioInput, searchInput} = this.state
-    const profileApiUrl = 'http://apis.ccbp.in/profile'
+    const profileApiUrl = 'https://apis.ccbp.in/profile'
     const optionsProfile = {
       headers: {
         Authorization: `Bearer ${jwtToken}`,
@@ -112,7 +112,7 @@ class AllJobs extends Component {
     this.setState({apiJobsStatus: apiJobsStatusConstants.inProgress})
     const jwtToken = Cookies.get('jwt_token')
     const {checkboxInputs, radioInput, searchInput} = this.state
-    const jobsApiUrl = `http://apis.ccbp.in/jobs?employment_type=${checkboxInputs}&minimum_package=${radioInput}&search=${searchInput}`
+    const jobsApiUrl = `https://apis.ccbp.in/jobs?employment_type=${checkboxInputs}&minimum_package=${radioInput}&search=${searchInput}`
     const optionsJobs = {
       headers: {
         Authorization: `Bearer ${jwtToken}`,
